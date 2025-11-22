@@ -1,0 +1,150 @@
+---
+marp: true
+theme: gaia
+class: lead
+paginate: true
+backgroundColor: #fff
+backgroundImage: url('https://marp.app/assets/hero-background.svg')
+---
+
+# Nex Programming Language
+
+A powerful, interpreted programming language built with Python.
+
+---
+
+## Introduction
+
+**Nex** features:
+- Clean syntax
+- Dynamic typing
+- Modular architecture
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Python 3.x
+
+### Running the Shell
+To start the interactive REPL:
+
+```bash
+python shell.py
+```
+
+---
+
+## Variables & Data Types
+
+Nex supports dynamic typing. Use `VAR` to declare variables.
+
+```nex
+VAR age = 25
+VAR pi = 3.14
+VAR name = "Nex"
+VAR numbers = [1, 2, 3]
+```
+
+---
+
+## Arithmetic Operators
+
+- `+` : Addition
+- `-` : Subtraction
+- `*` : Multiplication
+- `/` : Division
+- `^` : Power
+
+---
+
+## Comparison & Logical Operators
+
+| Comparison | Logical |
+| :--- | :--- |
+| `==` Equal | `AND` Logical AND |
+| `!=` Not Equal | `OR` Logical OR |
+| `<` Less than | `NOT` Logical NOT |
+| `>` Greater than | |
+| `<=` Less or equal | |
+| `>=` Greater or equal | |
+
+---
+
+## Control Flow: If-Elif-Else
+
+```nex
+VAR x = 10
+
+IF x > 5 THEN
+    PRINT("Greater than 5")
+ELIF x == 5 THEN
+    PRINT("Equal to 5")
+ELSE
+    PRINT("Less than 5")
+END
+```
+
+---
+
+## Loops
+
+**For Loops**
+```nex
+FOR i = 0 TO 4 THEN
+    PRINT(i)
+END
+```
+
+**While Loops**
+```nex
+VAR i = 0
+WHILE i < 5 THEN
+    PRINT(i)
+    VAR i = i + 1
+END
+```
+
+---
+
+## Functions
+
+**Block Syntax**
+```nex
+FUN add(a, b)
+    RETURN a + b
+END
+```
+
+**Arrow Syntax**
+```nex
+FUN multiply(a, b) -> a * b
+```
+
+---
+
+## Built-in Functions
+
+- `PRINT(value)`
+- `INPUT()`, `INPUT_INT()`
+- `LEN(list)`, `APPEND(list, value)`, `POP(list, index)`
+- `IS_NUM(value)`, `IS_STR(value)`, `IS_LIST(value)`
+- `RUN(filename)`
+
+---
+
+## Project Structure
+
+The project is modularized for maintainability:
+
+- **Core**: `nex.py`, `shell.py`
+- **Parsing**: `lexer.py`, `parser.py`, `tokens.py`
+- **Execution**: `interpreter.py`, `values.py`, `nodes.py`
+- **Utils**: `errors.py`, `constants.py`
+
+---
+
+# Thank You!
+
+Start coding with **Nex** today.
