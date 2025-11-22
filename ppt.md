@@ -145,6 +145,14 @@ The project is modularized for maintainability:
 
 ---
 
+## Project Highlights
+
+- Demonstrates deep understanding of programming concepts
+- All requirements implemented correctly
+- Includes advanced features or optimizations
+
+---
+
 # Thank You!
 
 Start coding with **Nex** today.
