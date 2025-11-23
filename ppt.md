@@ -13,6 +13,15 @@ A powerful, interpreted programming language built with Python.
 
 ---
 
+## Team Members
+
+Jomar Lazaro
+Jarren Aceret
+Derek Luis Lagadon
+Gabriel Andrei Adajar
+
+---
+
 ## Introduction
 
 **Nex** features:
@@ -148,8 +157,18 @@ The project is modularized for maintainability:
 ## Project Highlights
 
 - Demonstrates deep understanding of programming concepts
-- All requirements implemented correctly
 - Includes advanced features or optimizations
+
+---
+
+## Conclusion
+
+The **Nex** programming language project successfully demonstrates the implementation of a functional interpreter using Python.
+
+**Key Takeaways:**
+- Practical application of lexing, parsing, and interpreting.
+- Understanding of language design principles.
+- Creation of a modular and extensible codebase.
 
 ---
 
