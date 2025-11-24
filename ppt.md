@@ -9,7 +9,7 @@ backgroundImage: url('https://marp.app/assets/hero-background.svg')
 
 # Nex Programming Language
 
-A powerful, interpreted programming language built with Python.
+A programming language built with Python.
 
 ---
 
@@ -30,6 +30,10 @@ Gabriel Andrei Adajar
 - Modular architecture
 
 ---
+## Programming Language Pipeline 
+Source Code → Lexer → Parser → AST → Interpreter → Output
+
+---
 
 ## Getting Started
 
@@ -42,7 +46,6 @@ To start the interactive REPL:
 ```bash
 python shell.py
 ```
-
 ---
 
 ## Variables & Data Types

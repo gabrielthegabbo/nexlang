@@ -1,9 +1,9 @@
-import nex
+import run
 
 while True:
 	text = input('nex > ')
 	if text.strip() == "": continue
-	result, error = nex.run('<stdin>', text)
+	result, error = run.run('<stdin>', text)
 
 	if error:
 		print(error.as_string())

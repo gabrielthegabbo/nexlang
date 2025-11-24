@@ -1,0 +1,29 @@
+# Generate a list of 100 numbers in reverse order
+VAR list = []
+FOR i = 100 TO 0 STEP -1 THEN
+    APPEND(list, i)
+END
+
+PRINT("Nex Language Bubble Sort Benchmark")
+PRINT("Sorting 100 elements...")
+
+FUN bubbleSort(arr)
+    VAR n = LEN(arr)
+    FOR i = 0 TO n THEN
+        FOR j = 0 TO n - i - 1 THEN
+            IF arr/j > arr/(j+1) THEN
+                VAR temp = arr/j
+                SET(arr, j, arr/(j+1))
+                SET(arr, j+1, temp)
+            END
+        END
+    END
+    RETURN arr
+END
+
+VAR sortedList = bubbleSort(list)
+PRINT("Sorting complete!")
+PRINT("First 10 elements:")
+FOR i = 0 TO 10 THEN
+    PRINT(sortedList/i)
+END
