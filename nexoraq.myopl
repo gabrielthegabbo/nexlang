@@ -1,1 +1,2 @@
+JOMAR = 25
 PRINT(JOMAR + 1)

@@ -1,7 +1,7 @@
 import math
 import os
-from errors import RTError
-from constants import *
+from utils.errors import RTError
+from utils.constants import *
 
 class RTResult:
   def __init__(self):
@@ -382,7 +382,7 @@ class Function(BaseFunction):
     self.should_auto_return = should_auto_return
 
   def execute(self, args):
-    from interpreter import Interpreter
+    from .interpreter import Interpreter
     res = RTResult()
     interpreter = Interpreter()
     exec_ctx = self.generate_new_context()

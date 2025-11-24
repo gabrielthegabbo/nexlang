@@ -148,16 +148,18 @@ FUN multiply(a, b) -> a * b
 The project is modularized for maintainability:
 
 - **Core**: `nex.py`, `shell.py`
-- **Parsing**: `lexer.py`, `parser.py`, `tokens.py`
-- **Execution**: `interpreter.py`, `values.py`, `nodes.py`
-- **Utils**: `errors.py`, `constants.py`
+- **Lexer**: `lexer/lexer.py`, `lexer/tokens.py`
+- **Parser**: `parser/parser.py`, `parser/nodes.py`, `parser/grammar.txt`
+- **Interpreter**: `interpreter/interpreter.py`, `interpreter/values.py`
+- **Utils**: `utils/errors.py`, `utils/constants.py`, `utils/string_with_arrows.py`
 
 ---
 
 ## Project Highlights
 
-- Demonstrates deep understanding of programming concepts
-- Includes advanced features or optimizations
+- **Modular Architecture**: Decoupled Lexer, Parser, and Interpreter for better scalability.
+- **Organized File Structure**: Logical separation of concerns into `lexer`, `parser`, `interpreter`, and `utils` directories.
+- **Centralized Error Handling**: Unified error reporting mechanism for consistent debugging.
 
 ---
 

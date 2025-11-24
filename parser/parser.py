@@ -1,6 +1,6 @@
-from errors import InvalidSyntaxError
-from nodes import *
-from constants import *
+from utils.errors import InvalidSyntaxError
+from .nodes import *
+from utils.constants import *
 
 class ParseResult:
   def __init__(self):

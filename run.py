@@ -1,7 +1,7 @@
-from lexer import Lexer
-from parser import Parser
-from interpreter import Interpreter
-from values import Context, SymbolTable, Number, BuiltInFunction
+from lexer.lexer import Lexer
+from parser.parser import Parser
+from interpreter.interpreter import Interpreter
+from interpreter.values import Context, SymbolTable, Number, BuiltInFunction
 
 global_symbol_table = SymbolTable()
 global_symbol_table.set("NULL", Number.null)

@@ -1,6 +1,6 @@
-from values import Number, String, List, Function, RTResult
-from errors import RTError
-from constants import *
+from .values import Number, String, List, Function, RTResult
+from utils.errors import RTError
+from utils.constants import *
 
 class Interpreter:
   def visit(self, node, context):
