@@ -1,2 +1,87 @@
-JOMAR = 25
-PRINT(JOMAR + 1)
+# 1. Variable Assignment (expr: VAR IDENTIFIER EQ expr)
+VAR x = 10
+VAR y = 20
+
+# 2. Arithmetic Expressions (arith-expr, term, factor)
+VAR sum = x + y
+VAR diff = y - x
+VAR prod = x * y
+VAR div = y / x
+VAR power = x ^ 2
+
+# 3. Comparison Expressions (comp-expr)
+VAR is_equal = (x == 10)
+VAR is_not_equal = (x != y)
+VAR is_less = (x < y)
+VAR is_greater = (y > x)
+VAR is_less_equal = (x <= 10)
+VAR is_greater_equal = (y >= 20)
+
+# 4. Logical Expressions (expr: AND, OR, NOT)
+VAR logic_and = (x < y) AND (y > 0)
+VAR logic_or = (x > y) OR (y > 0)
+VAR logic_not = NOT (x == y)
+
+# 5. Lists (list-expr)
+VAR my_list = [1, 2, 3, 4, 5]
+VAR mixed_list = [1, "hello", [1, 2]]
+
+# 6. If Expression (if-expr, if-expr-b, if-expr-c)
+# Single line
+VAR result = IF x < y THEN 1 ELSE 0
+
+# Multi-line
+IF x == 10 THEN
+    PRINT("x is 10")
+ELIF x == 20 THEN
+    PRINT("x is 20")
+ELSE
+    PRINT("x is neither")
+END
+
+# 7. For Loop (for-expr)
+PRINT("For Loop:")
+FOR i = 0 TO 5 THEN
+    PRINT(i)
+END
+
+PRINT("For Loop with Step:")
+FOR i = 0 TO 10 STEP 2 THEN
+    PRINT(i)
+END
+
+# 8. While Loop (while-expr)
+PRINT("While Loop:")
+VAR i = 0
+WHILE i < 5 THEN
+    PRINT(i)
+    VAR i = i + 1
+END
+
+# 9. Function Definition (func-def)
+# Anonymous function / Arrow function
+VAR add = FUN (a, b) -> a + b
+PRINT(add(5, 10))
+
+# Multi-line function
+FUN greet(name)
+    PRINT("Hello " + name)
+END
+
+greet("Nex")
+
+# 10. Return, Continue, Break (statement)
+FUN check_loop()
+    FOR i = 0 TO 10 THEN
+        IF i == 5 THEN
+            CONTINUE
+        END
+        IF i == 8 THEN
+            BREAK
+        END
+        PRINT(i)
+    END
+    RETURN "Done"
+END
+
+PRINT(check_loop())
